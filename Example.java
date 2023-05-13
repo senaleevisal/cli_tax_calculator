@@ -1,17 +1,27 @@
 import java.util.*;
 
+import javax.annotation.processing.SupportedOptions;
+
 class Example{
 	public static void withholding_tax(){
 		Scanner input = new Scanner(System.in);
+		
+		System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+		System.out.println("+-------------------------------------------------------------------------------------------------+");
+		System.out.println("|                                    WITHHOLDING TAX                                              |");
+		System.out.println("+-------------------------------------------------------------------------------------------------+");
+						
 
 		System.out.println("[01] Rent Tax\n");
 		System.out.println("[02] Bank intrrest Tax\n");
+		System.out.println("[02] Divinded Tax\n");
 		System.out.println("[04] Exit \n");
 		System.out.println("Enter an option to continue ");
 		int a = input.nextInt();
 		switch (a){
 			case 01:
 					l1:do{
+						System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 						System.out.println("+-------------------------------------------------------------------------------------------------+");
 						System.out.println("|                                           RENT TAX                                              |");
 						System.out.println("+-------------------------------------------------------------------------------------------------+");
@@ -38,13 +48,14 @@ class Example{
 		
 			case 02:
 					l2:do {
+						System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 						System.out.println("+-------------------------------------------------------------------------------------------------+");
 						System.out.println("|                                      BANK INTEREST TAX                                          |");
 						System.out.println("+-------------------------------------------------------------------------------------------------+");
 
 						System.out.print("Enter your bank interest per year             :  ");
 						double d = input.nextDouble();
-						System.out.print("you have to pay Tax per year                  :  "+(d/100*5));
+						System.out.println("you have to pay Tax per year                  :  "+(d/100*5));
 						
 						System.out.print("Do you want to calculate another Bank Interst Tax [y/n] : ");
 						String c = input.next();
@@ -57,6 +68,7 @@ class Example{
 					} while (true);
 			case 03:
 					l3:do {
+						System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 						System.out.println("+-------------------------------------------------------------------------------------------------+");
 						System.out.println("|                                         DIVINDED TAX                                            |");
 						System.out.println("+-------------------------------------------------------------------------------------------------+");
@@ -64,12 +76,13 @@ class Example{
 						System.out.print("Enter your total dividend per year          :  ");
 						double d = input.nextDouble();
 						if (d>100000){
-							System.out.print("you have to pay Devidend Tax per year                  :  "+((d-100000)*14/100));
+							System.out.println("you have to pay Devidend Tax per year                  :  "+((d-100000)*14/100));
 						}else if (d<=100000){
 							System.out.println("You don’t have to pay Dividend Tax....");
 						}else{
 							System.out.println("Invalid input");
 						}
+						System.out.println("\n\n\n");
 
 						System.out.print("Do you want to calculate another Bank Interst Tax [y/n] : ");
 						String c = input.next();
@@ -86,6 +99,7 @@ class Example{
 		Scanner input =new Scanner(System.in);
 
 		l4:do {
+			System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 			System.out.println("+-------------------------------------------------------------------------------------------------+");
 			System.out.println("|                                          PAYABLE TAX                                            |");
 			System.out.println("+-------------------------------------------------------------------------------------------------+");
@@ -103,16 +117,16 @@ class Example{
 				System.out.println((a-141667)*12/100+(2500));
 			}else if ((a>183333)&&(a<=225000)){
 				System.out.print("you have to pay payable Tax per month : ");
-				System.out.println((a-183333)*18/100+(10000));
+				System.out.println((a-183333)*18/100+(7500));
 			}else if ((a>225000)&&(a<=266667)){
 				System.out.print("you have to pay payable Tax per month : ");
-				System.out.println((a-225000)*24/100+(25000));
+				System.out.println((a-225000)*24/100+(15000));
 			}else if ((a>266667)&&(a<=308333)){
 				System.out.print("you have to pay payable Tax per month : ");
-				System.out.println((a-266667)*30/100+(50000));
+				System.out.println((a-266667)*30/100+(25000));
 			}else {
 				System.out.print("you have to pay payable Tax per month : ");
-				System.out.println((a-308333)*36/100+(87500));
+				System.out.println((a-308333)*36/100+(37500));
 			}
 
 			System.out.print("Do you want to calculate another Bank Interst Tax [y/n] : ");
@@ -130,6 +144,7 @@ class Example{
 	public static void income_tax(){
 		Scanner input =new Scanner(System.in);
 		l5:do {
+			System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 			System.out.println("+-------------------------------------------------------------------------------------------------+");
 			System.out.println("|                                          INCOME TAX                                            |");
 			System.out.println("+-------------------------------------------------------------------------------------------------+");
@@ -174,6 +189,7 @@ class Example{
 		Scanner input = new Scanner (System.in);
 		
 		l6:do {
+			System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 			System.out.println("+-------------------------------------------------------------------------------------------------+");
 			System.out.println("|                         SOCIAL SECURITY CONTRIBUTION LEVY (SSCL) TAX                            |");
 			System.out.println("+-------------------------------------------------------------------------------------------------+");
@@ -204,6 +220,7 @@ class Example{
 	public static void leasing_payment(){
 		Scanner input =new Scanner(System.in);
 
+		System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 		System.out.println("+-------------------------------------------------------------------------------------------------+");
 		System.out.println("|                                       LEASING PAYMENT                                           |");
 		System.out.println("+-------------------------------------------------------------------------------------------------+");
@@ -219,6 +236,7 @@ class Example{
 		switch (a){
 			case 01:
 				l9:do {
+					System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 					System.out.println("+-------------------------------------------------------------------------------------------------+");
 					System.out.println("|                              CALCULATE MONTHLY INSTALLMENT                                      |");
 					System.out.println("+-------------------------------------------------------------------------------------------------+");
@@ -261,6 +279,7 @@ class Example{
 
 			case 02:
 				l10:do {
+					System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 					System.out.println("+-------------------------------------------------------------------------------------------------+");
 					System.out.println("|                                 SEARCH LEASING CATOGERY                                         |");
 					System.out.println("+-------------------------------------------------------------------------------------------------+");
@@ -295,6 +314,7 @@ class Example{
 			break;
 			case 03:
 				l11:do {
+					System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 					System.out.println("+-------------------------------------------------------------------------------------------------+");
 					System.out.println("|                                 FIND THE LEASING AMOUNT                                         |");
 					System.out.println("+-------------------------------------------------------------------------------------------------+");
@@ -339,6 +359,23 @@ class Example{
 	}
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
+		System.out.println("				   __  ______  _________ _______");
+		System.out.println("				  |  \\/      \\|         |       \\");
+		System.out.println("				   \\$|  $$$$$$| $$$$$$$$\\$$$$$$$$");
+		System.out.println("				  |  | $$   \\$| $$__      | $$");
+		System.out.println("				  | $| $$     | $$  \\     | $$");
+		System.out.println("				  | $| $$   __| $$$$$     | $$");
+		System.out.println("				  | $| $$__/  | $$_____   | $$");
+		System.out.println("				  | $$\\$$    $| $$     \\  | $$");
+		System.out.println("				   \\$$ \\ $$$$$$ \\$$$$$$$$ ||$$");
+		System.out.print("\n\n");
+
+		System.out.println(" _______                __    __      _____                 _            _____ ");
+		System.out.println("|__   __|      /\\       \\ \\  / /    / _____|       /\\      | |         / _____| ");
+		System.out.println("   | |        /  \\       \\ \\/ /    | |            /  \\     | |        | |");
+		System.out.println("   | |       / /\\ \\       >  <     | |           / /\\ \\    | |        | |" );
+		System.out.println("   | |      / ____ \\     / .  \\    | |______    / ____ \\   | |____    | |______ ");
+		System.out.println("   |_|     /_/    \\_\\   /_/ \\ _\\    \\______|   /_/    \\_\\  |______|    \\______|");
 
 		System.out.println("=======================================================================================================");
 		System.out.println("[01] Withholding Tax\n");
