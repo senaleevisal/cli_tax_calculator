@@ -23,8 +23,7 @@
 
 If you have any questions, feedback, or suggestions, we'd love to hear from you! Feel free to reach out to the project maintainers:
 
-- **Your Name** - [Your Email](mailto:senaleevisal@gmail.com)
-- **Contributor Name** - [Contributor's Email](mailto:contributor.email@example.com)
+- **contact me** - [m.m.senaleevisal@gmail.com](mailto:m.m.senaleevisal@gmail.com)
 
 We value your input and are here to assist you with any inquiries or assistance you may need related to the Tax Calculator CLI.
 
