@@ -27,8 +27,6 @@ If you have any questions, feedback, or suggestions, we'd love to hear from you!
 
 We value your input and are here to assist you with any inquiries or assistance you may need related to the Tax Calculator CLI.
 
-Additionally, you can [open an issue](https://github.com/senaleevisal/cli_tax_calculator/issues) on our GitHub repository to report bugs, request features, or provide general feedback. Your contributions and engagement are essential in making this tool even more valuable and user-friendly.
-
 Thank you for using our CLI tool and for your interest in making it better!
 
 
